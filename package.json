@@ -1,0 +1,23 @@
+{
+  "name": "testmu",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "test:s1": "playwright test tests/scenario1.simpleFormDemo.spec.js",
+    "test:s2": "playwright test tests/scenario2.dragDropSliders.spec.js",
+    "test:s3": "playwright test tests/scenario3.inputFormSubmit.spec.js",
+    "report": "playwright show-report",
+    "test:lt": "playwright test --config=lambdatest.config.js",
+    "report:lt": "playwright show-report playwright-report-lt"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@playwright/test": "^1.59.1",
+    "dotenv": "^17.4.2"
+  }
+}
